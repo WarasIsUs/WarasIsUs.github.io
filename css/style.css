@@ -1,0 +1,350 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+.teksjudul {
+	font: 30px monospace;
+	text-align: center;
+}
+
+/*section indextext*/
+section.indextext{
+	margin: 50px;
+	padding: 20px;
+	outline: black dotted;
+
+}
+
+/*section a*/
+section#a {
+	margin: 50px;
+	padding: 20px;
+	outline: black dotted;
+
+}
+
+#index a {
+	text-decoration: none;
+	color: blue;
+	margin-left: 600px;
+	font-weight: 900;
+	font-size: 15px;
+}
+
+#header a {
+	font-size: 17px;
+	font-family: monospace;
+}
+
+#index .index {
+	display: none;
+}
+
+.header {
+	padding: 15px;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+.header p {
+	font-size: 32px;
+	font-family: monospace;
+	color: black;
+	text-align: center;
+
+}
+
+@media (max-width: 768px) {
+	#index a {
+		text-decoration: none;
+		color: blue;
+		margin-left: 250px;
+		font-weight: 900;
+	}
+
+	#header a {
+		font-size: 20px;
+		font-family: monospace;
+	}
+
+	#index .index {
+		display: none;
+	}
+
+	.header {
+		padding: 15px;
+		margin: 10px;
+		margin-top: 0px;
+	}
+
+	.header p {
+		font-size: 32px;
+		font-family: monospace;
+		color: black;
+		text-align: center;
+
+	}
+}
+
+.atas {
+	font: 20px monospace;
+	text-align: center;
+}
+
+#intro1 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi1 {
+	display: none;
+}
+
+#intro2 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi2 {
+	display: none;
+}
+
+#intro3 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi3 {
+	display: none;
+}
+
+#intro4 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi4 {
+	display: none;
+}
+
+#intro5 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi5 {
+	display: none;
+}
+
+#intro6 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi6 {
+	display: none;
+}
+
+#intro7 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi7 {
+	display: none;
+}
+
+#intro8 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi8 {
+	display: none;
+}
+
+#intro9 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi9 {
+	display: none;
+}
+
+#intro10 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi10 {
+	display: none;
+}
+
+#intro11 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi11 {
+	display: none;
+}
+
+#intro1 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: justify;
+}
+.isi1 {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	#intro1 {
+	margin-top: 10px;
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	}
+	.isi1 {
+		display: none;
+	}
+
+	#intro2 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi2 {
+		display: none;
+	}
+
+	#intro3 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi3 {
+		display: none;
+	}
+
+	#intro4 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi4 {
+		display: none;
+	}
+
+	#intro5 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi5 {
+		display: none;
+	}
+
+	#intro6 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi6 {
+		display: none;
+	}
+
+	#intro7 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi7 {
+		display: none;
+	}
+
+	#intro8 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi8 {
+		display: none;
+	}
+
+	#intro9 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi9 {
+		display: none;
+	}
+
+	#intro10 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi10 {
+		display: none;
+	}
+
+	#intro11 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.isi11 {
+		display: none;
+	}
+
+	#intro1 {
+		margin-top: 10px;
+		color: black;
+		font-size: 20px;
+		text-align: center;
+	}
+	.isi1 {
+		display: none;
+	}
+}
+
+.buttonbuy {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	outline: gray double;
+	font-family: monospace;
+	margin-top: 10rem;
+}
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="generator">
+		<title>C++</title>
+		<link rel="icon" href="img/gibsonlespaul.png">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<p class="teksjudul">Dokumentasi C++</p>
+		<aside id="index">
+			<a href="#">[+]Buka index[+]</a><br>
+			<br>
+			<div id="header" class="index">
+				<a href="#" class="introPage">Intro</a><br>
+				<a href="#" class="CWork">Bagaimana C++ bekerja</a><br>
+				<a href="#" class="CCompiler">Bagaimana compiler bekerja</a><br>
+				<a href="#" class="CVariables">Variabel</a><br>
+				<a href="#" class="CType">Tipe data</a><br>
+				<a href="#" class="CConst">Konstanta</a><br>
+				<a href="#" class="COperator">Operator</a><br>
+				<a href="#" class="CControl">Pengondisian</a><br>
+				<a href="#" class="CLoop">Pengulangan</a><br>
+				<a href="#" class="CArray">Array</a>
+				<a href="#" class="CFunction">Fungsi</a>
+			</div>
+		</aside>
+		<section class="indextext">
+			<p class="atas">
+				Welcome
+			</p>
+		</section>
+		<section id="a">
+			<div class="isi1" id="intro1">
+				C++ merupakan ekstensi dari bahasa C yang dibuat oleh bjarne stroustrup, bjane stroustrup pada Bel labs pertama kali mengembangkan C++ pada awal 1980-an.Untuk mendukung fitur-fitur pada C++, dibangun efisiensi dan system support untuk pemrograman tingkat rendah.
+				<br><br>
+				Perbedaan mendasar antara bahasa C dengan bahasa C++ adalah dukungan pemrograman berorientasi objek.Bahasa C++ sudah ditambahkan konsep baru seperti class dengan sifat-sifatnya seperti inheritance dan overloading, selanjutnya kita akan membahas tentang bagaimana c++ bekerja <br>
+			</div>
+
+			<div class="isi2" id="intro2">
+				Bagaimana C++ bekerja, atau bagaimana cara kerja c++ ketika melakukan  compiling?.Dalam melakukan compiling
+				<br><br>
+				Sebelum memulai memprogram C++ ada baiknya kita mengetahui dulu bagaimana cara kerja bahasa C++ dan apa saja yang kita butuhkan untuk memprogram C++, supaya nantinya tidak mengalami yang namanya pusing (seperti saya dulu). Biasanya Kebanyakan dari kita langsung download-download saja, trus belajar programnya trus ngak ngerti dan akhrinya frustasi, berikut gambar tentang proses compiling file C++ <br><br>
+
+			</div>
+
+			<div class="isi3" id="intro3">
+				<div class="gambar">
+					<img src="img/compiler.png" width="200" height="110" alt="">
+				</div>
+				<br><br>
+				Dari gambar tersebut ada yang harus kita ketahui telebih dahulu bahwa, PC atau Laptop hanya mengerti satu bahasa dan bahasa itu adalah bahasa yang terdiri dari set instruksi yang berisikan satu dan nol (instruksi mesin), selain dari itu PC/ atau laptop tidak akan mengenalnya.
+				<br><br>
+				Source code C++, merupa bahasa pemrograman yang berisi sintak berbahasa inggris, yang tentunya tidak bisa langsung dibaca oleh PC/ Laptop, untuk itulah dibutuhkan yang namanya compiler.
+				<br><br>
+				Singkatnya Compiler adalah penterjemah dari Bahasa pemrograman yang ditulis oleh programmer ke bahasa mesin (intruksi mesin). 
+
+				Compiler ini lah yang nantikanya akan meng-compile bahasa-bahasa C++ yang telah kita buat tersebut menjadi kebahasa mesin.
+
+				Untuk menulis sebuah program C++ dibutuhkan yang namanya text editor dan compiler. Hasil dari text editor itu nantinya akan di compile dengan compiler yang kemudian akan menghasilkan sebuah file executable.
+
+				Executable ini lah yang nantinya bisa dijalankan di PC/ Laptop. Tidak hanya untuk PC kita juga bisa membuatnya untuk perangkat Android, MAC, IOS dll.
+				Selanjutnya, kita akan membahas tentang apa itu variabel. <br><br>
+			</div>
+
+			<div class="isi4" id="intro4">
+				Semua program komputer yang sedang berjalan akan menyimpan data sementara di dalam RAM (Random Access Memori).
+				Data-data yang tersimpan di dalam RAM memiliki alamat yang direpresentasikan dalam bilangan heksa desmial.
+				Bagaiaman cara program menyimpan nilai ke RAM?
+				Jawabannya dengan menggunakan variabel.
+				Semakin banyak variabel yang kamu buat semakin besar pula memori yang akan digunakan di dalam RAM.
+				<br><br>
+				Jadi dapat kita simpulkan…
+				Variabel adalah sebuah nama lokasi penyimpanan di dalam memori.
+				Sementara tipe data adalah jenis data yang akan disimpan di dalam variabel, yang akan kita bahas di bagian selanjutnya.
+			</div>
+
+			<div class="isi5" id="intro5">
+				Perhatikan beberapa script berikut:<br>
+				<code>
+					string nama;<br>
+					int umur;<br>
+					char jenis_kelamin;<br>
+				</code>
+				<br><br>
+				contoh program dengan menggunakan tipe data:<br>
+				<code>
+					#include "iostream" <br><br>
+
+					using namespace std;<br><br>
+
+					int main(){<br>
+ 
+						// deklarasi tipe data variabel <br>
+						string nama;<br>
+					 	int umur;<br>
+  					 	char jenis_kelamin;<br><br>
+ 
+					  	// --- proses input --- <br>
+					  	cout << "Siapakah namamu?" << endl; <br>
+					  	cout << "jawab: ";<br>
+					  	// menyimpan data ke variabel <br>	
+					  	getline(cin,nama);<br><br>
+ 
+					  	cout << "Berapa umurmu?" << endl;<br>
+					  	cout << "jawab: ";<br>
+					  	// menyimpan data ke variabel <br>
+					  	cin >> umur;<br><br>
+ 
+					  	cout << "Jenis kelamin [L/P]: ";<br>
+					  	// menyimpan data ke variabel <br>
+					  	cin >> jenis_kelamin;<br><br>
+ 
+					  	// --- proses output --- <br>
+					  	cout << "Salam kenal, " << nama << " Sekarang engkau berusia ";<br>
+					  	cout << umur << " dan kau berjenis kelamin "<< jenis_kelamin;<br><br>
+					 
+					 	return 0;<br>
+
+					}<br>
+				</code>
+				penjelasan:<br>
+				-tipe data string, adalah tipe data yang menampung karakter-karakter pada keyboard <br>
+				-tipe data integer(int), adalah tipe data yang menampung angka dan bit bit biner, terdapat dua pilihan ketika menggunakan tipe data integer ini <br>
+					yang pertama adalah int long, yang berarti bit yang bisa ditampung bisa lebih banyak daripada integer biasa, kedua adalah int short, <br>
+					yang berarti bit yang ditampung akan lebih sedikit dari int biasanya. <br>
+					ada juga unsigned, cara penulisannya <code>unsigned int angka</code> ini berarti kita tidak dapat menampung angka negatif di dalamnya, lalu signed, <br>
+					cara penulisannya <code>signed int angka</code> ini berarti kita bisa menampung angka positif ataupun negatif, yang mana ini sudah secara default ketika kita membuat tipe data integer pada program kita. <br>
+				-tipe data float, adalah tipe data berdesimal satu, hanya bisa menampung angka berdesimal satu, contoh 1.87, 1.8, 1.879 <br>
+				-tipe data double, adalah, tipe data berdesimal dua, hanya bisa menampung angka berdesimal dua saja, contoh 17.6, 17.998 <br>
+				-tipe data char, adalah tipe data yang hanya bisa menampung karakter bit satu, seperti huruf 'A', 'B', '+' <br>
+				-tipe data boolean, adalah tipe data yang hanya mempunyai dua angka saja, yaitu 1 dan 0, yang berarti 1 itu benar atau true, dan 0 itu salah atau false. <br>
+				Selanjutnya, kita akan membahas tentang konstanta.
+			</div>
+
+			<div class="isi6" id="intro6">
+				Sekarang kita akan membahas tentang konstanta, tentang apa itu konstanta, dan bagaimana cara mengimplementasikannya.
+				<br><br>
+				Ok, sekarang apa itu konstanta?, konstanta adalah sebuah variabel yang tidak bisa diubah isinya, atau sudah paten, contohnya adalah phi pada lingkaran
+				<br>phi pada lingkaran itu merupakan nilai yang sudah paten <br> cara mengimplementasikannya adalah dengan menambahkan kata kunci <code>const</code> diikuti dengan tipe datanya, contoh <code>const float phi = 3.17;</code>, selanjutnya kita akan membahas tentang operator <br>
+			</div>
+
+			<div class="isi7" id="intro7">
+				Dalam C++ operator dibagi menjadi 2, pertama adalah operator aritmatika, kedua adalah operator logika, ketiga adalah operator bitwise
+				<br><br>
+				Operator aritmatika adalah semua operasi yang menyangkut tentang matematika, ada kali, bagi, tambah, kurang, dan sisa bagi.Cara pengimplementasiannya sangat mudah, contoh: <br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					std::int a = 12;<br>
+					std::int b = 13;<br><br>
+
+					int main() {<br>
+						std::cout << a + b << std::endl;<br><br>
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				Selanjutnya adalah operasi logika, dalam operator ini, ada operasi AND, NOT, OR, contoh: <br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int a = 12;<br>
+					int b = 13;<br>
+					float hasil;<br><br>
+
+					int main() {<br>
+						//ini operasi AND <br>
+						hasil = a && b;<br>
+						//operasi NOT <br>
+						hasil1 = a != b;<br>
+						//operasi OR <br>
+						hasil2 = a || b;<br>
+						std::cout << hasil << std::endl;<br>
+						std::cout << hasil1 << std::endl;<br>
+						std::cout << hasil2 << std::endl;<br><br>
+
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				Selanjutnya adalah operasi bitwise, secara sederhana operasi bitwise adalah operasi yang digunakan untuk menghitung angka-angka biner, contoh: <br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int a = 10010;<br>
+					int b = 1010001;<br>
+					int hasil;<br><br>
+
+					int main() {<br>
+						//ini operasi XOR <br>
+						hasil = a ^ b;<br>
+						//operasi NOR <br>
+						hasil1 = ~b;<br>
+						std::cout << hasil << std::endl;<br>
+						std::cout << hasil1 << std::endl;<br><br>
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				Selanjutnya, kita akan belajar tentang pengondisian pada c++. <br>
+			</div>
+
+			<div class="isi8" id="intro8">
+				Pada C++ pengondisian ada 2, yaitu if else dan switch, nah pada c++ if else digunakan pada pengondisian yang pasif, sementara switch digunakan untuk pengondisian yang dinamis, seperti mengondisikan input user ketika bermain game, maupun yang lain.
+				<br><br>
+				contoh: <br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int a = 10010;<br>
+					int b = 1010001;<br>
+					float hasil;<br><br>
+
+					int main() {<br>
+						//ini operasi AND <br>
+						if (a && b) {<br>
+							std::cout << hasil << std::endl;<br>
+						}<br><br>
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				contoh switch: <br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int a = 10010;<br>
+					int b = 1010001;<br>
+					float hasil;<br><br>
+
+					int main() {<br>
+						switch(hasil){<br>
+							case (a && b):<br>
+								std::cout << hasil << std::endl;<br>
+								break;<br>
+							default:<br>
+								std::cout << hasil << std::endl;<br>
+								break;<br>
+						}
+
+						<br><br>
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				Selanjutnya, kita akan membahas tentang pengulangan di C++ <br>
+			</div>
+
+			<div class="isi9" id="intro9">
+				Sekarang, kita akan membahas tentang pengulangan di C++.Ok, apa itu pengulangan?, pengulangan dalam C++ artinya
+				kita bisa mengulang output yang kita inginkan dalam beberapa kali, ini akan sangat berguna ketika,
+				kita membuat program yang berhubungan dengan logika, seperti tebak angka, dll.Dalam C++ ada 3 bentuk pengulangan, yang pertama: <br>
+				1.for<br>
+				2.while<br>
+				3.do while<br><br>
+				<br><br>
+				Ok, kita mulai dari 'for', for digunakan ketika kita ingin melakukan pengulangan yang pasif, ketika sebuah batas nilai sudah ditentukan, maka saat itu program berhenti<br>
+				'while', while digunakan ketika kita ingin membuat pengulangan yang tetap, artinya jika suatu batas nilai tidak terpenuhi maka program tidak akan dijalankan<br>
+				'do while', do while digunakan ketika kita ingin membuat pengulangan yang dinamis, artinya kita bisa membuat pengondisian juga di dalamnya, dan jika sebuah nilai tidak terpenuhi
+				maka program akan tetap dijalankan walaupun hanya sekali saja<br><br>
+				contoh: <br>
+				<code>
+					#include "iostream.h"<br><br>
+					
+					int a = 0;<br>
+					int b = 0;<br><br>
+					
+					int main() {<br>
+						//menggunakan for<br>
+						for (int i = 0; i < 10; i++) {<br>
+							std::cout << i << std::endl;<br>
+						}<br><br>					
+
+						//menggunakan while<br>
+						while (a != 0) {<br>
+							std::cout << a << std::endl;<br>
+						}<br><br>
+
+						//menggunakan do while<br>
+						do {<br>
+							std::cout << b << std::endl;<br>
+						}while(b < 9);<br>
+						<br><br>
+
+						std::cin.get();<br>
+						return 0;<br>
+					}
+				</code><br>
+				Selanjutnya, kita akan membahas tentang array di C++. <br>
+			</div>
+
+			<div class="isi10" id="intro10">
+				Ok, kita akan membahas tentang array, jadi apa itu array?, array adalah sekumpulan data yang bisa secara urut maupun acak
+				<br><br>
+				Dalam array, terdapat dua tipe, pertama adalah array satu dimensi, dan array multidimensi, dalam strukturnya bisa digambarkan seperti ini<br>
+				<table border="1" cellspacing="5" colspan="5">
+					<tr>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+						<th>6</th>
+					</tr>
+				</table><br><br>
+				Dalam multimensi, berbeda lagi, seperti ini tabelnya <br>
+				<table border="1" cellspacing="5" colspan="5">
+					<tr>
+						<td>1</td>	
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>						
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>					
+					</tr>
+				</table><br><br>
+				Jika, ingin 3 dimensi maka akan jadi seperti ini, <br>
+				<table border="1" cellspacing="5" colspan="5">
+					<tr>
+						<td>1</td>	
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>						
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>					
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>					
+					</tr>
+				</table><br><br>
+				Begitu juga 4 dimensi dan seterusnya, untuk sintaksnya seperti ini.<br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int main() {<br>
+						int angka[] = {1,2,3,4,5,6,7,8,9,11};<br><br>
+						for(int i: angka) {<br>
+							std::cout << i << std::endl;<br>
+						}<br<><br>
+
+						int angkaMulti[][] = {{1,2,3,4,5}, {1,2,3,4,5}};<br><br>
+						for(int j = 0; j < 5; j++) {<br>
+							for (int y = 0; y < 5; y++) {<br>
+								std::cout << angkaMulti[j][y] << '\n';<br>
+							}<br>
+						}<br><br>
+					
+						std::cin.get();<br>
+						return 0;<br>
+					}<br>
+				</code><br>
+				Di bagian, 'int angka[]', secara opsional kita bisa mengisi batas angka pada 'angka[]'.Namun, jika isinya tidak bisa ditebak, kita bisa mengosonginya saja.<br>
+				Baiklah, mungkin sekian untuk materi array, untuk lebih lanjut kalian bisa mencari di sumber lain, seperti w3school, javaTpoint, dll.Untuk materi selanjutnya, kita akan membahas
+				tentang function pada C++.<br>
+			</div>
+
+			<div class="isi11" id="intro11">
+				Ok, selamat datang lagi, kita sekarang ada pada materi function, langsung saja.Jadi, apa itu function?, dalam C++ function adalah suatu cara untuk membuat kode kita bisa digunakan kembali, walaupun tidak bisa secara keseluruhan.Penggunaan function ini,
+				sebenarnya sudah kita gunakan pada saat membuat variabel maupun pengulangan, nama fungsinya adalah 'int main() {}'.Yaps, jadi sebenarnya kita sudah berhasil membuat sebuah function, namun 'int main() {}',
+				adalah function yang memang harus ada dalam pembuatan program menggunakan c++, program sebesar apapun itu, pasti akan berakhir di 'int main(){}'.Jadi, kita akan langsung membuat saja sintaksnya.	
+				<br><br>
+				<code>
+					#include "iostream.h"<br><br>
+
+					int HelloMaulana() {<br>
+						std::cout << "Hello maulana\n";<br>
+					}<br><br>
+						
+					//fungsi/(function) utama<br>
+					int main() {<br>
+						//function buatan sendiri<br>
+						HelloMaulana();<br><br>
+				
+						std::cin.get();<br>
+						return 0;<br>
+					}<br>
+				</code><br>
+				Dalam C++ juga terdapat function yang sudah disediakan dari pembuatnya, seperti typedef(), size(), dll.Sekian, materi yang dapat saya tuliskan untuk kalian, semoga bermanfaat.
+				Sampai jumpa di materi berikutnya.
+			</div>
+		</section>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
